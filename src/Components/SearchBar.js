@@ -4,7 +4,7 @@ export default props => {
   return (
     <div>
       <form onSubmit={props.loadWeather}>
-        <input type="text" />
+        <input name="city" type="text" />
         <button>Show Weather</button>
       </form>
     </div>

@@ -11,8 +11,8 @@ class App extends React.Component {
   }
   getWeather = e => {
     e.preventDefault();
-    let weatherUrl =
-      "https://api.openweathermap.org/data/2.5/weather?q=mumbai&APPID=966604145f9141f0872bbd24cea3a1f2";
+    const city = e.target.elements.city.value;
+    let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=966604145f9141f0872bbd24cea3a1f2`;
 
     fetch(weatherUrl)
       .then(response => response.json())
