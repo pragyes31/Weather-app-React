@@ -1,11 +1,10 @@
 {
-  "name": "new",
+  "name": "weather-man",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather app created suing React",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "axios": "0.18.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "2.1.8"

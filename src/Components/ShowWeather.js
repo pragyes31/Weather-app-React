@@ -1,3 +1,5 @@
+import React from "react";
+
 export default () => {
-  return "weather";
+  return <div>Weather</div>;
 };
