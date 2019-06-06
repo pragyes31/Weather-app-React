@@ -1,4 +1,17 @@
+@import "./style/SearchBar.css";
+
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
