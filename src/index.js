@@ -7,6 +7,11 @@ import ShowWeather from "./Components/ShowWeather";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      temperature: undefined,
+      weather: undefined,
+      icon: undefined
+    };
     this.getWeather = this.getWeather.bind(this);
   }
   getWeather = e => {
@@ -16,13 +21,23 @@ class App extends React.Component {
 
     fetch(weatherUrl)
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(data =>
+        this.setState({
+          temperature: data.main.temp,
+          weather: data.weather[0].description,
+          icon: data.weather[0].icon
+        })
+      );
   };
   render() {
     return (
       <div>
         <SearchBar loadWeather={this.getWeather} />
-        <ShowWeather />
+        <ShowWeather
+          temperature={this.state.temperature}
+          weather={this.state.weather}
+          icon={this.state.icon}
+        />
       </div>
     );
   }
