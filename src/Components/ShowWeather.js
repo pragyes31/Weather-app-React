@@ -1,10 +1,14 @@
 import React from "react";
 
 export default props => {
-  const imageUrl = `https://openweathermap.org/img/w/${props.icon}.png`;
-  return <div />;
+  console.log(`${props.temperature}`);
+  return (
+    <div className="weather-info">
+      <div className="city" />
+      <div className="temperature">{props.temperature}</div>
+      <div className="forecast" />
+      <div className="description" />
+      <div className="icon" />
+    </div>
+  );
 };
-
-// {props.temperature}
-// {props.weather}
-// <img src={imageUrl} alt="" />

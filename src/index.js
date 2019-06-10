@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SearchBar from "./Components/SearchBar";
-import "./styles.css";
 import ShowWeather from "./Components/ShowWeather";
+import "./styles.css";
 
 class App extends React.Component {
   constructor(props) {
