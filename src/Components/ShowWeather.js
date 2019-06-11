@@ -1,14 +1,13 @@
 import React from "react";
 
 export default props => {
-  console.log(`${props.temperature}`);
   return (
     <div className="weather-info">
-      <div className="city" />
-      <div className="temperature">{props.temperature}</div>
-      <div className="forecast" />
-      <div className="description" />
-      <div className="icon" />
+      <div className="city">city</div>
+      <div className="temperature">temp</div>
+      <div className="forecast">forecast</div>
+      <div className="description">desc</div>
+      <div className="icon">icon</div>
     </div>
   );
 };

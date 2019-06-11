@@ -1,3 +1,28 @@
 .weather-info {
+  width: 100vw;
+  height: calc(100vh - 50px);
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  background-color: #fff;
+}
+
+.city {
+  background-color: #548c72;
+}
+
+.temperature {
+  background-color: #f2a477;
+}
+
+.forecast {
+  background-color: #f2ccb6;
+}
+
+.description {
+  background-color: #d9765f;
+}
+
+.icon {
+  background-color: #a6524b;
 }

@@ -1,4 +1,5 @@
 @import "./style/SearchBar.css";
+@import "./style/ShowWeather.css";
 
 .App {
   font-family: sans-serif;
