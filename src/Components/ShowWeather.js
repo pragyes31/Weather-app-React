@@ -1,13 +1,25 @@
 import React from "react";
+import tempConverter from "../util/tempConverter";
 
 export default props => {
   return (
     <div className="weather-info">
-      <div className="city">city</div>
-      <div className="temperature">temp</div>
-      <div className="forecast">forecast</div>
-      <div className="description">desc</div>
-      <div className="icon">icon</div>
+      {props.city === undefined ? (
+        "Search Weather in your favorite city"
+      ) : (
+        <div>
+          <h3>
+            Weather in {props.city}, {props.country} is :
+          </h3>
+          <img
+            src={`http://openweathermap.org/img/w/${props.icon}.png`}
+            alt="weather icon"
+          />
+          {tempConverter(props.temperature)} &deg;C
+        </div>
+      )}
     </div>
   );
 };
+
+// Weather in {props.city}, {props.country} is {props.temperature}

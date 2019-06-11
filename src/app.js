@@ -8,7 +8,9 @@ class App extends React.Component {
     this.state = {
       temperature: undefined,
       weather: undefined,
-      icon: undefined
+      icon: undefined,
+      city: undefined,
+      country: undefined
     };
     this.getWeather = this.getWeather.bind(this);
   }
@@ -23,7 +25,9 @@ class App extends React.Component {
         this.setState({
           temperature: data.main.temp,
           weather: data.weather[0].description,
-          icon: data.weather[0].icon
+          icon: data.weather[0].icon,
+          city: data.name,
+          country: data.sys.country
         })
       );
   };
@@ -35,6 +39,8 @@ class App extends React.Component {
           temperature={this.state.temperature}
           weather={this.state.weather}
           icon={this.state.icon}
+          city={this.state.city}
+          country={this.state.country}
         />
       </div>
     );
