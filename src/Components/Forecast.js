@@ -3,6 +3,7 @@ import React from "react";
 class Forecast extends React.Component {
   constructor(props) {
     super(props);
+    this.getForecast = this.getForecast.bind(this);
   }
   getForecast = () => {};
   render() {
