@@ -1,5 +1,5 @@
 .weather-info {
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: 200px;
   background-color: #548c72;
 }

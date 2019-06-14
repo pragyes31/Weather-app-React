@@ -15,7 +15,7 @@ export default props => {
             src={`http://openweathermap.org/img/w/${props.icon}.png`}
             alt="weather icon"
           />
-          {tempConverter(props.temperature)} &deg;C
+          <h3>{tempConverter(props.temperature)} &deg;C</h3>
         </div>
       )}
     </div>

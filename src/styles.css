@@ -1,5 +1,6 @@
 @import "./style/SearchBar.css";
 @import "./style/ShowWeather.css";
+@import "./style/Forecast.css";
 
 .App {
   font-family: sans-serif;
@@ -15,5 +16,4 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #d23432;
 }

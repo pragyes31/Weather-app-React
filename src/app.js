@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "./Components/SearchBar";
 import ShowWeather from "./Components/ShowWeather";
+import Forecast from "./Components/Forecast";
 
 class App extends React.Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class App extends React.Component {
           city={this.state.city}
           country={this.state.country}
         />
+        <Forecast city={this.state.city} />
       </div>
     );
   }
